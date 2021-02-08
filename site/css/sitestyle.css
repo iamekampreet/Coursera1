@@ -1,7 +1,7 @@
 body {
 	background-color:#61122f;
 	font-family: 'Oxygen', sans-serif;
-	font-size: 16px;
+	/*font-size: 16px;*/
 }	/*Applying to whole body*/
 
 
@@ -76,56 +76,17 @@ li>.nav-link {
 }	/*We deliver displayed under number*/
 
 
-@media (min-width:1200px) {
-
-	#maincontent .jumbotron {
-		background: url("../images/jumbotron_1200.jpg") no-repeat;
-		height:675px;
-	}
-}	/*Extra large devices*/
-
-@media (min-width: 992px) and (max-width: 1199px) {
-
-	#maincontent .jumbotron {
-		background: url("../images/jumbotron_992.jpg") no-repeat;
-		height:558px;
-	}
-}	/*Large devices*/
-
-@media (min-width: 768px) and (max-width: 991px){
-	.nav-link>img {
-		width: 100px;
-		height:100px;
-	}	/*Making the main logo smaller*/
 
 
-}	/*Medium devices*/
-
-@media (max-width: 767px){
-	.navbar-brand h1{
-		font-size:4vw;
-	}
-	.navbar-brand span{
-		font-size:10px;
-	}
-	.navbar-brand img{
-		padding-left:0;
-		width: 20px;
-		height: 20px;
-	}
-
-
-}	/*Extra small and small devices*/
-
-
-
-/*Main content starts*/
+/*Home page #maincontent*/
 #maincontent {
 	margin-top:30px;
 }	/*The whole container*/
 
 #maincontent .jumbotron {
-	margin-bottom:15px;
+	margin:0 0 15px 0;
+	padding:0;
+	border:2px solid #3f0c1f;
 }
 
 .menu-tile, .specials-tile, .map-tile {
@@ -156,7 +117,100 @@ li>.nav-link {
 	text-align:center;
 	text-transform: uppercase;
 }
-/*Main content ends*/
+/*Home Page maincontent ends*/
+
+
+
+
+/*Styles for menuCategories page*/
+#menuCatHead{
+	color:white;
+}
+#menuCatHead+p{
+	color:white;
+	font-size:0.8em;
+	margin-bottom:50px;
+}
+
+.menuCatTile{
+	width:200px;
+	height:200px;
+	position:relative;
+	border:1px solid black;
+	margin:0px auto 15px;
+	overflow:hidden;
+}
+.menuCatTile>span {
+	width:100%;
+	position:absolute;
+	bottom:0px;
+	text-align:center;
+	background-color:black;
+	opacity:0.7;
+
+}
+.menuCatTile:hover {
+	box-shadow:0 1px 5px 1px #cccccc;
+}
+
+/*Styles for menuCategories page ends*/
+
+
+
+
+
+/*Styles for singleCategories page*/
+#singleCatHead {
+	color:white;
+}
+#singleCatHead+p {
+	color:white;
+	font-size:.8em;
+	margin-bottom:50px;
+}
+
+.singleCatTile *{
+	color:white;
+}
+.singleCatTile>hr {
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.singleCatTile {
+	margin-bottom:20px;
+}
+
+.menuItemPhoto{
+	position:relative;
+	max-width:250px;
+	border:2px solid #3f0c1f;
+}
+.menuItemPhoto span {
+	position:absolute;
+	bottom:0px;
+	right:0px;
+	width:60px;
+	text-align:center;
+	color:white;
+	background-color: #557c3e;
+	opacity:.8;
+}
+
+.singleCatTile .menuItemPrice {
+	text-align:right;
+}
+.singleCatTile .menuItemPrice span {
+	font-size:.8em;
+}
+
+.menuItemDescription p {
+	font-size:.8em;
+	font-style:italic;
+}
+
+/*Styles for singleCategories page ends*/
+
 
 
 
@@ -176,7 +230,70 @@ footer p {
 	font-style:italic;
 }
 
-@media (max-width: 576px) {
+/*Footer ends*/
+
+
+
+
+/*Media Queries*/
+@media (min-width:1200px) {
+	#maincontent .jumbotron {
+		background: url("../images/jumbotron_1200.jpg") no-repeat;
+		height:675px;
+	} 	/*The big restaurant image on the home page*/
+
+}	/*Extra large devices*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	#maincontent .jumbotron {
+		background: url("../images/jumbotron_992.jpg") no-repeat;
+		height:558px;
+	}	/*The big restaurant image on the home page*/
+
+}	/*Large devices*/
+
+@media (min-width: 768px) and (max-width: 991px){
+	.nav-link>img {
+		width: 100px;
+		height:100px;
+	}	/*Making the brand logo smaller*/
+
+}	/*Medium devices*/
+
+@media(min-width:576px) and (max-width:767px){
+
+}	/*Small devices only*/
+
+@media (max-width: 767px){
+	/*Header content*/
+	.navbar-brand h1{
+		font-size:4vw;
+	}
+	.navbar-brand span{
+		font-size:10px;
+	}
+	.navbar-brand img{
+		padding-left:0;
+		width: 20px;
+		height: 20px;
+	}
+	/*Header ends*/
+
+}	/*Extra small and small devices*/
+
+@media (max-width: 575px) {
+
+	/*singleCategories page content*/
+	.menuItemPhoto {
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.singleCatTile .menuItemPrice, .menuItemDescription{
+		text-align:center;
+	}
+	/*singleCategories page content ends*/
+
+	/*Footer*/
 	footer section{
 		text-align:center;
 	}
@@ -184,4 +301,16 @@ footer p {
 		width:50%;
 		margin:0 auto 15px;
 	}
-}
+	/*Footer ends*/
+
+}	/*Extra small devices only*/
+
+
+
+
+
+
+
+
+
+
