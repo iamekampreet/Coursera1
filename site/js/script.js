@@ -3,11 +3,11 @@ var dc = {};
 
 var homeHtml = "snippets/home-snippet.html";
 
-var allCategoriesUrl = "http://davids-restaurant.herokuapp.com/categories.json";
+var allCategoriesUrl = "https://davids-restaurant.herokuapp.com/categories.json";
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
 
-var allMenuItemsUrl = "http://davids-restaurant.herokuapp.com/menu_items.json?category=";
+var allMenuItemsUrl = "https://davids-restaurant.herokuapp.com/menu_items.json?category=";
 var menuItemTitleHtml = "snippets/menu-item-title-snippet.html";
 var menuItemHtml = "snippets/menu-item-snippet.html";
 
@@ -31,7 +31,6 @@ function insertProperty(string,replaceThis,withThis){
 }
 
 function applyActiveTo(selector){
-	console.log(document.querySelectorAll(".fullWidthNav")[0].classList);
 	for(var i=0; i<document.querySelectorAll(".fullWidthNav").length; i++){
 		document.querySelectorAll(".fullWidthNav")[i].classList.remove("active");
 	};
