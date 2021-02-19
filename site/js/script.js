@@ -67,7 +67,7 @@ function buildAndShowCategories(categoriesJsonCode){
 			var categoriesViewHtml = 
 				buildCategoriesViewHtml(categoriesJsonCode,categoriesTitleCode,categoryCode);
 			insertHtml("#maincontent",categoriesViewHtml);
-
+			console.log(categoriesTitleCode);
 		},false);
 
 	},false);
