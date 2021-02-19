@@ -93,6 +93,7 @@ function buildCategoriesViewHtml(categoriesJsonCode,categoriesTitleCode,category
 //menuCategories page ends
 
 
+
 //singleCategories page starts
 dc.loadMenuItems = function(shortName){
 
