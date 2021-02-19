@@ -4,15 +4,15 @@ var dc = {};
 var homeHtml = "snippets/home-snippet.html";
 
 var allCategoriesUrl = "http://davids-restaurant.herokuapp.com/categories.json";
-var categoriesTitleHtml = "https://itsrandom64.github.io/Coursera1/site/snippets/categories-title-snippet.html";
-var categoryHtml = "https://itsrandom64.github.io/Coursera1/site/snippets/category-snippet.html";
+var categoriesTitleHtml = "snippets/categories-title-snippet.html";
+var categoryHtml = "snippets/category-snippet.html";
 
 var allMenuItemsUrl = "http://davids-restaurant.herokuapp.com/menu_items.json?category=";
-var menuItemTitleHtml = "https://itsrandom64.github.io/Coursera1/site/snippets/menu-item-title-snippet.html";
-var menuItemHtml = "https://itsrandom64.github.io/Coursera1/site/snippets/menu-item-snippet.html";
+var menuItemTitleHtml = "snippets/menu-item-title-snippet.html";
+var menuItemHtml = "snippets/menu-item-snippet.html";
 
-var aboutHtml = "https://itsrandom64.github.io/Coursera1/site/snippets/about-snippet.html";
-var awardsHtml = "https://itsrandom64.github.io/Coursera1/site/snippets/awards-snippet.html";
+var aboutHtml = "snippets/about-snippet.html";
+var awardsHtml = "snippets/awards-snippet.html";
 
 function insertHtml (selector,html){
 	document.querySelector(selector).innerHTML = html;
