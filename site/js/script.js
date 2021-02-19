@@ -66,7 +66,6 @@ function buildAndShowCategories(categoriesJsonCode){
 			var categoriesViewHtml = 
 				buildCategoriesViewHtml(categoriesJsonCode,categoriesTitleCode,categoryCode);
 			insertHtml("#maincontent",categoriesViewHtml);
-			console.log(categoriesTitleCode);
 		},false);
 
 	},false);
@@ -91,7 +90,6 @@ function buildCategoriesViewHtml(categoriesJsonCode,categoriesTitleCode,category
 	return finalHtml;
 }
 //menuCategories page ends
-
 
 
 //singleCategories page starts
